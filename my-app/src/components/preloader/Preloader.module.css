@@ -1,0 +1,29 @@
+.wrapper {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f9f9f9;
+}
+
+.fetching {
+    position: absolute;
+    top: calc(50% - 120px);
+    left: calc(50% - 120px);
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    animation: search-fetching .5s infinite alternate linear;
+}
+
+@keyframes search-fetching {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) scale(1.3);
+    }
+}

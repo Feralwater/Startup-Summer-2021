@@ -1,0 +1,99 @@
+.image_container {
+    display: inline-block;
+    height: 280px;
+    width: 280px;
+}
+
+.avatar {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.card {
+    margin: 0 0 29px 0;
+}
+
+.card_name {
+    font-weight: 600;
+    font-size: 26px;
+    display: block;
+    overflow: hidden;
+    margin: 31px 0 17px 0;
+}
+
+.card_username {
+    font-weight: 400;
+    font-size: 18px;
+    color: #0064eb;
+    display: block;
+    text-decoration: none;
+    /*margin: 0 0 12px 0;*/
+}
+
+.followers {
+    white-space: nowrap;
+}
+
+.follow {
+    font-family: "Inter", sans-serif;
+    white-space: nowrap;
+    color: #000000;
+    display: inline-block;
+    user-select: none;
+    margin: 0 22px 0 0;
+
+}
+
+.follow svg {
+    margin: 0 10px 0 0;
+}
+
+.follow_image {
+    display: inline-block;
+    overflow: visible;
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    .follow_items {
+        display: flex;
+        flex-direction: column;
+        margin-left: 14px;
+    }
+}
+
+@media (max-width: 639px) {
+    .image_container {
+        height: 90px;
+        width: 90px;
+    }
+
+    .card {
+        margin: 0 0 10px 0;
+    }
+
+    .card_name {
+        margin: 0px 0 10px 0;
+    }
+}
+
+@media (max-width: 424px) {
+    .card_name {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .image_container {
+        flex: 1 0 auto;
+        height: 50px;
+        width: 50px;
+    }
+
+    .followers {
+        white-space: normal;
+    }
+}

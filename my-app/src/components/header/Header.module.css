@@ -1,0 +1,47 @@
+.header {
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background-color: #0064eb;
+    height: 72px;
+    z-index: 1000;
+}
+
+.headerWrapper {
+    margin: 16px auto;
+    max-width: 1284px;
+    padding: 0 41px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    flex: 0 1 16px;
+}
+
+.inputSearch {
+    display: flex;
+    margin-left: 22px;
+    width: 500px;
+}
+
+.inputSearch input {
+    width: 100%;
+    /*width: 412px;*/
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+    line-height: 1.75;
+    border: none;
+    background: url("../../img/search-icon.svg") #ffffff no-repeat 19px center;
+    padding: 8px 44px;
+}
+
+@media (max-width: 425px) {
+    .inputSearch input {
+        font-size: 10px;
+        padding: 6px 10px 6px 40px;
+    }
+}
