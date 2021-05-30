@@ -32,12 +32,13 @@ const Repos = () => {
         {
           isFetching === false
             ?
-            repos.map((repo, index) => <Repo repo={repo} key={index}/>)
+              repos.map((repo, index) => <Repo repo={repo} key={index}/>)
+
             :
             <Preloader/>
         }
       </div>
-      <div className={style.wrapper_pagination}>
+      <div className={style.wrapper_pagination + (isFetching ? 'none' : '')}>
         <div className={style.page_numbers}>
           <div className={style.pagination_items}>
             {(currentPage - 1) * 4 + 1}-{

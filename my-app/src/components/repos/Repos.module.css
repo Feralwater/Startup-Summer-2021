@@ -112,3 +112,14 @@
         margin: 0 0 15px 0;
     }
 }
+
+.previous path:hover {
+    fill: #0064eb;
+}
+
+.next path:hover {
+    stroke: #0064eb;
+}
+.none{
+    display: none;
+}
