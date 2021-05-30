@@ -4,6 +4,7 @@ import style from "./EmptyRepo.module.css"
 const EmptyRepo = () => {
 
   return (
+    <div className={style.wrapper}>
     <div className={style.content}>
       <div>
         <svg className={style.empty_image} width="76" height="62" viewBox="0 0 76 62" fill="none"
@@ -14,6 +15,7 @@ const EmptyRepo = () => {
         </svg>
       </div>
       <div className={style.text}>Repository list is empty</div>
+    </div>
     </div>
   )
 }
